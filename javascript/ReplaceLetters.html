@@ -1,0 +1,55 @@
+<html>
+<head>
+  <style>
+    div {
+      border: solid 1px lime;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+
+<div id="results"></div>
+
+<script lang="text/javascript">
+  const el = $('#results');
+
+  $(function() {
+    let text = 'Battle of the Vowels: Hawaii vs. Grozny';
+    let replace = 'aeiou';
+
+    el.append('<p>Running removeLetters()</p>');
+    el.append('<p>Source string: ' + text + '</p>');
+    el.append('<p>Replace set: ' + replace + '</p>');
+
+    let result = removeLetters(text, replace);
+
+    el.append('<p>Result is: ' + result + '</p>');
+  });
+
+  function removeLetters(text, replace) {
+    let textArray = text.split('');
+    // el.append('<p>' + textArray + '</p>');
+
+    let replaceMap = {};
+    for (let i = 0; i < replace.length; i++) {
+      replaceMap[replace[i]] = true;
+    }
+    // el.append('<p>' + JSON.stringify(replaceMap) + '</p>');
+
+    let index = 0;
+    while (index < textArray.length) {
+      let currLetter = textArray[index];
+      if (replaceMap[currLetter]) {
+        textArray.splice(index, 1);
+      } else {
+        index += 1;
+      }
+    }
+
+    return textArray.join('');
+  }
+</script>
+</body>
+</html>
