@@ -4,7 +4,7 @@
   "description": "Programming practice puzzle solutions",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha javascript/**/*.js"
   },
   "repository": {
     "type": "git",
