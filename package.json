@@ -1,0 +1,22 @@
+{
+  "name": "programming-practice",
+  "version": "1.0.0",
+  "description": "Programming practice puzzle solutions",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alisonwilbur/programming-practice.git"
+  },
+  "author": "alisonwilbur",
+  "bugs": {
+    "url": "https://github.com/alisonwilbur/programming-practice/issues"
+  },
+  "homepage": "https://github.com/alisonwilbur/programming-practice#readme",
+  "devDependencies": {
+    "@types/mocha": "^8.0.0",
+    "mocha": "^8.0.1"
+  }
+}

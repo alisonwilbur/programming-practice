@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "All Unit Tests",
+            "type": "node",
+            "request": "launch",
+            "outputCapture": "std",
+            "smartStep": true,
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "unit-test-files",
+                "--",
+                "--no-timeouts",
+                "./src/**/*.test.ts"
+            ],
+            "sourceMaps": true,
+            "stopOnEntry": false
+        }
+    ]
+}
