@@ -17,6 +17,6 @@
   "homepage": "https://github.com/alisonwilbur/programming-practice#readme",
   "devDependencies": {
     "@types/mocha": "^8.0.0",
-    "mocha": "^8.0.1"
+    "mocha": "^8.4.0"
   }
 }
